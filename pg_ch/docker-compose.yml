@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:15
+    restart: always
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=de_course
+      - POSTGRES_PASSWORD=1q2w3e4r5t
+      - POSTGRES_DB=de_course
+    ports:
+      - "5431:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+      
+
+  clickhouse:
+    image: yandex/clickhouse-server:latest
+    restart: always
+    container_name: clickhouse
+    ports:
+      - "8123:8123"
+      - "9002:9000"
+    volumes:
+      - ./clickhouse_data:/var/lib/clickhouse
+      
+
+
+volumes:
+  postgres_data:
+  clickhouse_data:
