@@ -1,0 +1,12 @@
+--- LOGS REPORT ---
+Total requests: 6
+
+Number of unique IP-addresses: 
+4
+
+Number of requests by methods: 
+POST: 1
+GET: 5
+
+The most popular URL: 
+/index.html (requests: 3)

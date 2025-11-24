@@ -17,6 +17,9 @@ services:
     image: yandex/clickhouse-server:latest
     restart: always
     container_name: clickhouse
+    environment:
+      - CLICKHOUSE_USER=de_course
+      - CLICKHOUSE_PASSWORD=1q2w3e4r5t
     ports:
       - "8123:8123"
       - "9002:9000"
