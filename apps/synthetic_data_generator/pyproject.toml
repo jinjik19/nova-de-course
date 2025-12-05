@@ -1,0 +1,28 @@
+[project]
+name = "synthetic-data-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "orjson>=3.11.4",
+    "pyspark>=4.0.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.8",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I", "W"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+]
+
+[tool.ruff.isort]
+known-first-party = ["apps"]

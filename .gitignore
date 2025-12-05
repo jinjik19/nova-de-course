@@ -1,2 +1,8 @@
 postgres_data/
 .ipynb_checkpoints/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.ruff_cache/
