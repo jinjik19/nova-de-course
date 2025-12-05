@@ -57,6 +57,13 @@
 ---
 
 ## Example of data
+| id | name | email | city | age | salary | registration_date |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8fdbe4eb-e0f5-43d5-95d0-67c05ce6b2cb| Дарья | darya@corp.ru | Нижний Новгород | 95 | | 1974-11-22 |
+| a98c2032-eece-4553-b5ad-d2f2db135db4 | Матвей | matvei@mail.ru | San Diego | 78 | 1950504.37 | 2021-02-05 |
+| c5c880cb-7f9e-40b5-8d20-86c09f282be8 | Екатерина | ekaterina@corp.com | Chicago | 53 | 2656980.44 | 2020-03-08 |
+| da56595-48fa-4f73-9b3e-18ad41610a3a | Jessica | jessica@mail.ru | Омск | 89 | 4905508.01 | 2016-08-08 |
+| 62b821fa-b6b4-4428-9d30-3aab8442d77d | Jennifer | jennifer@mail.com | Самара | 57 | 7048447.82 | 2017-01-22 |
 ---
 
 ## Start project

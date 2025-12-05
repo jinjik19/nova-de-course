@@ -14,6 +14,7 @@ from pyspark.sql import DataFrame, SparkSession
 from src.models import ROW_SCHEMA, Row
 from src.services.logger import logger
 from src.services.nullable import nullable
+from src.utils.translit import transliterate
 
 
 class GeneratorLogic:
@@ -57,8 +58,9 @@ class GeneratorLogic:
 
         domain = random.choice(['gmail', 'yandex', 'mail', 'corp'])
         zone = random.choice(['com', 'ru'])
-        clean_name = name.lower().replace(" ", ".")
-        return f"{clean_name}@{domain}.{zone}"
+        latin_name = transliterate(name)
+
+        return f"{latin_name}@{domain}.{zone}"
 
     @nullable()
     def _generate_city(self, cities: list[str]):
